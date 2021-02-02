@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.firstfewlines.TestSeleniumJunit" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-02T12:31:01" hostname="50HW017020" time="13.335">
+  <properties/>
+  <testcase name="abrirAplicacion" classname="com.firstfewlines.TestSeleniumJunit" time="13.335"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 45780
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 02, 2021 7:31:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

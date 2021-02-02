@@ -1,0 +1,30 @@
+group 'com.firstfewlines'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'com.firstfewlines.TestSelenium'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.seleniumhq.selenium:selenium-java:3.141.59') { //:3.4.0
+        exclude group: 'org.seleniumhq.selenium', module: 'selenium-android-driver'
+        exclude group: 'org.seleniumhq.selenium', module: 'selenium-iphone-driver'
+        exclude group: 'org.seleniumhq.selenium', module: 'selenium-safari-driver'
+        exclude group: 'org.webbitserver', module: 'webbit'
+        exclude group: 'commons-codec', module: 'commons-codec'
+        exclude group: 'cglib', module: 'cglib-nodep'
+    }
+    //To run JUnit 3 and junit 4 tests
+    testImplementation ("junit:junit:4.12")
+    //testRuntime("org.junit.vintage:junit-vintage-engine:4.12.0-M4")
+
+    testCompile("org.hamcrest:hamcrest-library:1.3")
+}
