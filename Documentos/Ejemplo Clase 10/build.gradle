@@ -1,0 +1,36 @@
+group 'com.firstfewlines'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'com.firstfewlines.SeleniumSample'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.seleniumhq.selenium:selenium-java:3.4.0') {
+        exclude group: 'org.seleniumhq.selenium', module: 'selenium-android-driver'
+        exclude group: 'org.seleniumhq.selenium', module: 'selenium-iphone-driver'
+        exclude group: 'org.seleniumhq.selenium', module: 'selenium-safari-driver'
+        exclude group: 'org.webbitserver', module: 'webbit'
+        exclude group: 'commons-codec', module: 'commons-codec'
+        exclude group: 'cglib', module: 'cglib-nodep'
+    }
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.6.RELEASE'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.6.RELEASE'
+
+   // Mockito - Power Mockito
+   testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '2.0.7'
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: '2.0.7'
+    compile group: 'org.mockito', name: 'mockito-core', version: '2.22.0'
+
+    testCompile("junit:junit:4.12")
+
+    testCompile("org.hamcrest:hamcrest-library:1.3")
+}

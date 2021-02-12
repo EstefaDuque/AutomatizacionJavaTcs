@@ -1,9 +1,6 @@
 package com.firstfewlines;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -18,10 +15,10 @@ import java.net.URL;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestSeleniumJunit {
-    WebDriver webDriver;
+    protected static WebDriver webDriver;
 
-    @Before
-    public void abrirDriver(){webDriver = new ChromeDriver();}
+    @BeforeClass
+    public static void  abrirDriver(){webDriver = new ChromeDriver();}
 
     @Test
     public void abrirAplicacion() throws MalformedURLException {
@@ -44,8 +41,8 @@ public class TestSeleniumJunit {
 
     }
 
-    @After
-    public void tearDown(){
+    @AfterClass
+    public static void tearDown(){
         webDriver.quit();
     }
 }

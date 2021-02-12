@@ -1,0 +1,79 @@
+1. mkdir tddJunit:	para crear el directorio del proyecto
+2. cd tddJunit: Navegar a la carpeta del proyecto
+3. gradle init:	Ingresar opciones de creación del proyecto
+4. dir:	Verificar que se crean los artefactos del proyecto
+5. Ingresar a InteliJ y abrir el proyecto existente desde la carpeta
+6. Ejecutar la clase AppTest que contiene una prueba de un Test Junit de la App creada.
+7. Debe observar que 
+
+PS D:\cesaraarias\capacitacionAuto> mkdir tddJunit
+
+    Directory: D:\cesaraarias\capacitacionAuto
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2/8/2021  10:43 AM                tddJunit
+
+
+PS D:\cesaraarias\capacitacionAuto> cd tddJUnit
+
+PS D:\cesaraarias\capacitacionAuto\tddJUnit>
+
+PS D:\cesaraarias\capacitacionAuto\tddJUnit> gradle init
+
+Select type of project to generate:
+  1: basic
+  2: application
+  3: library
+  4: Gradle plugin
+Enter selection (default: basic) [1..4] 2
+
+Select implementation language:
+  1: C++
+  2: Groovy
+  3: Java
+  4: Kotlin
+  5: Swift
+Enter selection (default: Java) [1..5] 3
+
+Select build script DSL:
+  1: Groovy
+  2: Kotlin
+Enter selection (default: Groovy) [1..2] 1
+
+Select test framework:
+  1: JUnit 4
+  2: TestNG
+  3: Spock
+  4: JUnit Jupiter
+Enter selection (default: JUnit 4) [1..4] 1
+
+Project name (default: tddJUnit):
+Source package (default: tddJUnit): com.mybank
+
+> Task :init
+Get more help with your project: https://docs.gradle.org/6.4/userguide/tutorial_java_projects.html
+
+BUILD SUCCESSFUL in 59s
+2 actionable tasks: 2 executed
+PS D:\cesaraarias\capacitacionAuto\tddJUnit> dir
+
+
+    Directory: D:\cesaraarias\capacitacionAuto\tddJUnit
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2/8/2021   7:50 AM                .gradle
+d-----          2/8/2021   7:50 AM                gradle
+d-----          2/8/2021   7:51 AM                src
+-a----          2/8/2021   7:51 AM            160 .gitattributes
+-a----          2/8/2021   7:51 AM            108 .gitignore
+-a----          2/8/2021   7:51 AM            967 build.gradle
+-a----          2/8/2021   7:50 AM           5770 gradlew
+-a----          2/8/2021   7:50 AM           3058 gradlew.bat
+-a----          2/8/2021   7:51 AM            365 settings.gradle
+
+
+PS D:\cesaraarias\capacitacionAuto\tddJUnit> 
+

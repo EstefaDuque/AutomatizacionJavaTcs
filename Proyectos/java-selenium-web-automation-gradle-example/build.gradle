@@ -21,8 +21,16 @@ dependencies {
         exclude group: 'commons-codec', module: 'commons-codec'
         exclude group: 'cglib', module: 'cglib-nodep'
     }
-    //To run Junit 3 and junit 4 tests
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.6.RELEASE'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.6.RELEASE'
+    // Mockito - Power Mockito
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '2.0.7'
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: '2.0.7'
+    compile group: 'org.mockito', name: 'mockito-core', version: '2.22.0'
+
+      //To run Junit 3 and junit 4 tests
     testCompile("junit:junit:4.12")
 
     testCompile("org.hamcrest:hamcrest-library:1.3")
+
 }
